@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Papá</title>
+    <link rel="stylesheet" href="carta-styles.css">
+</head>
+<body>
+    <div class="sobre" id="sobre">
+        <div class="contenido">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_814108-MLM45475087425_042021-O.webp" alt="Sobre de carta">
+        </div>
+    </div>
+
+    <div id="hoja" class="hoja">
+        <div class="hoja-content">
+            <h2>Querido Papá,</h2>
+            <h4>En este día especial quiero agradecerte por todo tu amor y apoyo...</h4>
+            <h4>Hoy quiero agradecerte por todo lo que haces por nosotros. Cada día, con tu trabajo duro y tu esfuerzo constante, nos enseñas el verdadero significado del sacrificio y la dedicación.</h4> 
+            <h4>Gracias por ser nuestro ejemplo de fortaleza y por nunca rendirte, incluso cuando las cosas se ponen difíciles En este día especial, celebremos por tu dia aunque todo los dias son tuyos por ser un buen padre. Te queremos más de lo que imaginas y estamos eternamente agradecidos por tener un padre tan increíble como tú.</h4>
+            <h4>Feliz Día del Padre!</h4>
+        </div>
+        <div class="video-container">
+            <iframe width="500" height="280" src="https://www.youtube.com/embed/P2hVgrRp-kY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="cerrar">
+            <a href="#" class="cerrar-btn">Cerrar Carta</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('sobre').addEventListener('click', function() {
+            document.getElementById('hoja').classList.add('visible');
+        });
+
+        document.querySelector('.cerrar-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('hoja').classList.remove('visible');
+        });
+    </script>
+</body>
+</html>
